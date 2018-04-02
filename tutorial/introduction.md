@@ -7,9 +7,9 @@ Here is a quick introduction to our tutorial
 
 ## What are we going to build
 
-We are going to build a simple app that helps keep track of home expenses. The app consists of three pages: Each expense is assigned to an appropriate category. 
+We are going to build a simple app that helps keep track of home expenses. The app consists of three pages: Dashboard, Add Expense, and Log. Each expense is assigned to an appropriate category. 
 
-In this process, we will explore some of the most frequently used Cx features and components. After finishig this tutorial, you should be able to create some medium complex Cx applications and it should serve as a solid fondation to further improve your knowledge.
+In this process, we will explore some of the most frequently used Cx features and components. After finishing this tutorial, you should be able to create some medium complex Cx applications and it should serve as a solid foundation to further improve your knowledge.
 
 Cx features covered in this tutorial:
 * Layouts
@@ -33,7 +33,7 @@ Some of the Cx components covered in this tutorial:
     * Columns
     * Legend
 
-The app was made using Cx material theme and out of the box components, with minimum effort, but enogh to explore styling workflow.
+The app was made using Cx material theme and out of the box components, with minimum effort, but enough to explore styling workflow.
 
 Here are a couple of screenshots of our finished app with descriptions.
 
@@ -77,8 +77,8 @@ entries = [
 ];
 ```
 
-This model lets us easilty perform queris and filter entries by different parameters (category, date, amount...).
-The categories will be stored in a seperate array:
+This model lets us easily perform queries and filter entries by different parameters (category, date, amount...).
+The categories will be stored in a separate array:
 
 #### app/data/categories.js
 ```js
