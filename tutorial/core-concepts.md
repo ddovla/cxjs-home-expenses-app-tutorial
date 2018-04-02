@@ -1,13 +1,13 @@
 # Core concepts
 
-Before continuing with the application, it is useful to familiarize ourselves with core Cx concepts:
+Before continuing with the application development, it is useful to familiarize ourselves with core Cx concepts:
 * [Application state (Store)](#application-state-store)
 * [Data-binding](#data-binding)
 * [Controllers](#controllers)
 
 **TODO:** Add examples from the application to explore core concepts
 * Don't forget to mention the `cx` wrappers (`<cx></cx>`).
-* Show the app state in console, so we can referr to it when explaining the Sandbox
+* Show the app state in a console, so we can refer to it when explaining the Sandbox
 
 ## Application state (Store)
 
@@ -68,7 +68,7 @@ As we continue below, we'll explore the most common ways to use the Store inside
 ## Data-binding
 
 Data binding is a process of connecting the application state to the UI. If the connection is successful, state changes will be reflected in the UI and user actions will be properly translated into state changes. There are multiple ways of applying data to the widgets. 
-Here we'll briefly explore the ones we will be using most often. For more, check out the docs on [Data Binding](https://docs.cxjs.io/concepts/data-binding).
+Here we'll briefly explore the ones we will be using most often. To learn more, check out the docs for [Data Binding](https://docs.cxjs.io/concepts/data-binding).
 
 ### Two-way Data Binding (bind)
 
@@ -78,7 +78,7 @@ Two-way data binding is commonly used in forms, as it supports both read and wri
 <Checkbox value-bind='intro.core.cb1'>Checkbox</Checkbox>
 ```
 By appending a `-bind` suffix to the `value` property, we are basically telling Cx to create a two-way data binding between the Checkbox and the Store. In this case, instead of assigning `true` or `false` to the `value` property, we are entering a string that represents a path inside the Store where that value will be kept. 
-The default value for the Checkbox state in this case would be `false`. If we want to make it `true` instead, we would need to use the functional synthax for creating a binding:
+The default value for the Checkbox state, in this case, would be `false`. If we want to make it `true` instead, we would need to use the functional syntax for creating a binding:
 
 ```jsx
 <Checkbox value={bind('intro.core.cb2', true)}>Checkbox</Checkbox>
@@ -93,7 +93,7 @@ Another way to do this would be to assign an object literal with `bind` and `def
 
 ### Data Expressions (expr)
 
-Data expressions are string attributes that are compiled to JavaScript methods and used to calculate dynamic values at runtime. Let's add a new textfield control and use a data expression for its enabled property.
+Data expressions are string attributes that are compiled to JavaScript methods and used to calculate dynamic values at runtime. Let's add a new `TextField` control and use a data expression for its `enabled` property.
 
 ```
 <TextField value-bind='intro.core.text' enabled-expr='!{intro.core.cb1}' />
@@ -120,7 +120,7 @@ Templates are data expressions which return strings. They are a convenient optio
 
 ### Computables (computable)
 
-Computables are somewhat simillar to expressions and templates, since they also make it possible to calculate dynamic values at runtime. 
+Computables are somewhat similar to expressions and templates since they also make it possible to calculate dynamic values at runtime. 
 
 ```jsx
 <div preserveWhitespace>
@@ -137,7 +137,7 @@ One huge advantage of computables over expressions and templates is that we can 
 
 ## Controllers
 
-Controllers are used to concentrate business logic required for views. This includes preparing data for rendering purposes, calculating values, reacting on changes, defining callbacks, etc. Controllers are assigned to widgets using the `controller` attribute. 
+Controllers are used to concentrate business logic required for views. This includes preparing data for rendering purposes, calculating values, reacting to changes, defining callbacks, etc. Controllers are assigned to widgets using the `controller` attribute. 
 
 #### Controller initialization example
 
