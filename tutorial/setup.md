@@ -215,18 +215,9 @@ Finally, don't forget to add material icons to your project, as described [here]
 </html>
 ```
 
-To check that the material theme was successfully installed, enter `yarn start` in command line, in the app go to `Users` page and choose `User 1` ([http://localhost:8088/users/1](http://localhost:8088/users/1)) and check out the Edit User form.
+To check that the material theme was successfully installed, enter `yarn start` in command line, in the app go to `Add Expense` page and choose one of the categories ([http://localhost:9001/entry/new](http://localhost:9001/entry/new)) and check out the Add Entry form. If everything is fine, you should see something like this:
 
-<img src="https://github.com/codaxy/cxjs-home-expenses-app-tutorial/blob/master/tutorial/screenshots/edit_user_default.PNG" alt="Default theme" />
 
-Default theme
-
-<img src="https://github.com/codaxy/cxjs-home-expenses-app-tutorial/blob/master/tutorial/screenshots/edit_user_material.PNG" alt="Material theme" />
-
-Material theme
-
-<img src="https://github.com/codaxy/cxjs-home-expenses-app-tutorial/blob/master/tutorial/screenshots/edit_user_material_label_placement.PNG" alt="Material theme and label placement" />
+<img src="https://github.com/codaxy/cxjs-home-expenses-app-tutorial/blob/master/tutorial/screenshots/add_entry_material_label_placement.PNG" alt="Material theme and label placement" />
 
 Material theme and label placement
-
-The form should now look like the one on the third image.
